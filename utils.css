@@ -1,0 +1,54 @@
+.min-h-screen{
+    min-height: 100vh;
+ }
+
+.bg-red{
+    background-color: red
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{ 
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.font-bold{
+    font-weight: bolder;
+}
+.flex-col{
+    flex-direction: column;
+}
+.my-1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.my-2{
+     margin-top: 13px;
+    margin-bottom: 13px;
+}
+.px-2{
+    padding-right: 26px;
+    padding-left: 26px;
+}
+.twxt-blue{
+    color: aquamarine;
+}
+.overflow-hidden{
+    overflow: scroll;
+}
+.text-center{
+    padding: inherit;
+}
+@media screen and (max-width: 600px) {
+			.column.side, .column.middle {
+				width: 100%;
+			}

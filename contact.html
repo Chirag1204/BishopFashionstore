@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishop Fashion</title>
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+          </head>
+<body>
+    <div class="container mx-auto ">
+<header>
+        <nav class="flex justify-between">
+            <div class="logo">
+            <img class="imglogo" src="attachments/ea86c95b-8c9c-4b98-80b6-4942c653aa20.JPG" alt="Bishop Fashion">
+            </div>
+    <ul class="navbar flex items-center">
+        <a class="active" href="index.html">Home</a>
+        <li class="dropdown">
+        <a class="active dropbtn" href="#products">Products</a>
+            <div class="dropdown-content">
+                <br>
+                <br>
+        <a href="#" onclick="location.href='http://bishop.blinkstore.in/'">BASICS</a>
+      <a class="dropdown" href="#" onclick="location.href='https://thebishopstore.creator-spring.com/'">Premium X</a>
+      <a class="dropdown" href="#" onclick="location.href='https://example.com/page3'">Option 3</a>
+                 <a class="dropdown active" href="POD.html">Upload your own design</a>
+            </div>
+        </li>
+        <a class="active">About Us</a>
+        <a class="active" href="contact.html">Contact</a>
+        <li><button class="btn">Buy Now</button></li>
+            </ul>
+    </nav>  
+    <hr>
+        </header>                                                                                                                                                                                                            <div class="container-co">
+        <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>Get in Touch</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+             <input type="email" id="email" placeholder="Email ID" required>
+             <input type="text" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" rows="6" placeholder="How may we help you?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        </div>   
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "chiraagarora1204@gmail.com",
+    Password : "269D4C1D73328653FD38D8820FF727F348FD",
+    To : 'bishopfashionstore@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Enquiry",
+    Body : "Name: "+ document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
++ "<br> Pnone no: " + document.getElementById("phone").value
++ "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message")
+);
+        }
+        </script>
+        <footer class="text-center">
+        Copyright &copy; bishopfashion.com | All rights reserved
+    <br>
+    <br>
+    Connect with us on:
+    <br>
+    <br>
+    <img class="imgfooter" src="attachments/Instagram_logo_2022.svg.png" alt="Instagram">
+    <img class="imgfooter" src="attachments/etsy-removebg-preview.png" alt="Etsy">
+    <img class="imgfooter1" src="attachments/blink-removebg-preview.png" alt="Blinkstore">
+        </footer>
+    </div>
+</body>
+</html>
